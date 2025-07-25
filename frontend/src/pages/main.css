@@ -1,0 +1,34 @@
+/* main.css */
+
+.main-container {
+  display: flex;
+  flex-direction: column;       /* organiza os filhos em coluna */
+  align-items: center;          /* centraliza horizontalmente */
+  padding: 0px 20px 40px 20px;
+  min-height: 100vh;            /* ocupa toda a altura da tela */
+  padding: 20px;
+  background-color: #f8f9fa;    /* opcional: cor de fundo clara */
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;          /* centraliza os cards */
+  gap: 16px;                    /* espaçamento entre os cards */
+  width: 100%;
+  max-width: 600px;
+}
+
+.ola{
+  align-self: flex-start;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 2.5rem;
+}
+
+.texto{
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 1rem;
+}
