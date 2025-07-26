@@ -65,6 +65,7 @@ input {
 .quadrado > button:last-of-type {
     width: 100%;
     padding: 10px;
+    margin-top: 20px;
     border-radius: 15px;
     font-weight: bold;
     cursor: pointer;

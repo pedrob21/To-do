@@ -3,6 +3,49 @@
 }
 
 .card {
+  position: relative;
   margin-bottom: 16px;
   border-radius: 15px;
+}
+
+.color-indicator {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.card-options {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #555;
+}
+
+.card-options:hover {
+  color: #000;
+}
+
+.options-menu {
+  font-size: 14px;
+  min-width: 80px;
+}
+
+.option-item {
+  padding: 5px 8px;
+  cursor: pointer;
+}
+
+.option-item:hover {
+  background-color: #f0f0f0;
+}
+
+.form-check-input{
+  cursor: pointer;
 }

@@ -1,10 +1,21 @@
 import React from "react";
 import "./testelog.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Logpage() {
 
     const [activeTab, setActiveTab] = useState<"login" | "register">("login");
+
+    const navigate = useNavigate();
+
+    const handleLogin = () => {
+      navigate("/main"); // ou qualquer rota que você quiser
+    };
+
+    const handleRegister = () => {
+      navigate("/main"); // pode ser outra rota se quiser
+    };
 
   return (
     <div className="tudo"
@@ -45,7 +56,7 @@ function Logpage() {
           name="Senha"
         />
 
-        <button>Entrar</button>
+        <button onClick={handleLogin}>Entrar</button>
         </>
     ) : (
         <>
@@ -73,7 +84,7 @@ function Logpage() {
           name="confirmasenha"
         />
 
-        <button>Cadastrar</button>
+        <button onClick={handleRegister}>Cadastrar</button>
         </>
     )}
       </div>
